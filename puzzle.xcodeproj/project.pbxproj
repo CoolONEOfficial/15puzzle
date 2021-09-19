@@ -11,6 +11,7 @@
 		85D5B0BF26F78AC900D4A063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D5B0BE26F78AC900D4A063 /* ContentView.swift */; };
 		85D5B0C126F78ACA00D4A063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D5B0C026F78ACA00D4A063 /* Assets.xcassets */; };
 		85D5B0C426F78ACA00D4A063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D5B0C326F78ACA00D4A063 /* Preview Assets.xcassets */; };
+		85D5B0CF26F78F7700D4A063 /* SwiftImage in Frameworks */ = {isa = PBXBuildFile; productRef = 85D5B0CE26F78F7700D4A063 /* SwiftImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D5B0CF26F78F7700D4A063 /* SwiftImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = puzzle;
+			packageProductDependencies = (
+				85D5B0CE26F78F7700D4A063 /* SwiftImage */,
+			);
 			productName = puzzle;
 			productReference = 85D5B0B926F78AC900D4A063 /* puzzle.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 85D5B0B026F78AC900D4A063;
+			packageReferences = (
+				85D5B0CD26F78F7700D4A063 /* XCRemoteSwiftPackageReference "swift-image" */,
+			);
 			productRefGroup = 85D5B0BA26F78AC900D4A063 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85D5B0CD26F78F7700D4A063 /* XCRemoteSwiftPackageReference "swift-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/koher/swift-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85D5B0CE26F78F7700D4A063 /* SwiftImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85D5B0CD26F78F7700D4A063 /* XCRemoteSwiftPackageReference "swift-image" */;
+			productName = SwiftImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85D5B0B126F78AC900D4A063 /* Project object */;
 }
